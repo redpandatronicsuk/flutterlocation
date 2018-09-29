@@ -38,7 +38,7 @@ var location = new Location();
 
 // Platform messages may fail, so we use a try/catch PlatformException.
 try {
-  currentLocation = await location.getLocation;
+  currentLocation = await location.getLocation();
 } on PlatformException {
   currentLocation = null;
 }
